@@ -1,0 +1,41 @@
+{
+  "name": "eocambo-printer-management",
+  "version": "1.0.0",
+  "description": "Test for printer - thermal printers too",
+  "author": "eOcambo Technology",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/fssonca/electron-printer",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "printer",
+    "demo"
+  ],
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-builder": "^22.9.1",
+    "electron-packager": "^15.4.0"
+  },
+  "dependencies": {
+    "electron-pos-printer": "^1.2.0",
+    "pusher-js": "^8.4.0"
+  },
+  "build": {
+    "appId": "com.eocambo.app",
+    "productName": "eOcambo Printer Management",
+    "target": "NSIS",
+    "directory": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
